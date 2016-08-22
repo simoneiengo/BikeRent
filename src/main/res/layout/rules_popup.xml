@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/PopupRegolamento"
+    android:minWidth="300dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/darker_gray"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1.2 Payment"
+        android:gravity="left"
+        android:textColor="#b7102f"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis ac urna bibendum porttitor. Duis a laoreet lacus. Maecenas et sem leo. Donec eget quam tincidunt magna ornare sollicitudin. Phasellus ut purus dolor. Proin accumsan libero vitae lorem auctor, quis hendrerit arcu feugiat. Pellentesque luctus nibh a ante tristique, et pellentesque nisl iaculis. Proin rhoncus pharetra nisi eget tempus.
+                            Nullam sagittis ante non turpis auctor, at dictum tellus dapibus. Nullam et sollicitudin est, eget porta purus. Quisque facilisis risus quis ipsum fringilla, non tincidunt sem congue. Nam tempus est non velit porttitor, vel feugiat ipsum fringilla. Proin eget dolor nisl. Nulla enim neque, imperdiet id mattis sed, auctor in ipsum. Maecenas ornare viverra sem eu sagittis. Nulla ut tincidunt felis.
+                            Proin ac dapibus tellus. Donec ornare tristique euismod. Aenean vestibulum quam non vestibulum posuere. Sed purus nulla, condimentum vitae ipsum pulvinar, ultricies pharetra ante. Sed suscipit ultrices justo, id mattis augue faucibus sit amet. Cras mollis tristique justo, in ultricies massa fringilla ut. Proin vitae lectus porta, scelerisque dui consequat, consectetur nisi. Integer faucibus quam quis mi accumsan euismod vitae eget arcu. Nunc a posuere eros. Morbi eu rhoncus urna.
+                            Suspendisse potenti. Vestibulum sit amet mauris risus. Nunc non tortor ut quam vestibulum venenatis eu ac mauris. Ut laoreet eleifend elementum. Ut nisi nunc, sagittis nec euismod non, cursus sed lorem. Integer luctus porttitor odio et imperdiet. Praesent vehicula mi non vestibulum tristique. Curabitur iaculis scelerisque diam, quis gravida tellus pulvinar ac.
+                            Nunc molestie diam ac neque pellentesque tincidunt. Morbi gravida tincidunt purus, ut lacinia diam. Suspendisse eleifend metus varius hendrerit mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ullamcorper, risus eget varius interdum, libero metus semper nisl, in viverra sem lectus sit amet lacus. Integer et dui et elit laoreet imperdiet. Nulla fringilla ipsum mi. Mauris quis faucibus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus mauris lorem, tincidunt ac lacinia a, blandit id ante. Suspendisse lacinia tellus augue, at varius justo vehicula a. Aenean risus lorem, accumsan scelerisque ipsum at, facilisis mollis nibh.
+                            Donec sagittis, sem vitae porta placerat, dui dolor faucibus lorem, quis eleifend sapien nisl a risus. In quis purus in magna malesuada mollis eget a quam. Etiam a eros vel tellus laoreet consequat a vel sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec bibendum sagittis convallis. Nullam vel malesuada nisi. Quisque eget finibus eros. Nulla dapibus magna vitae risus facilisis, sed efficitur felis maximus. Mauris tincidunt tempor condimentum. Vivamus sodales eu metus ac pharetra. Phasellus et mattis massa. Curabitur efficitur finibus eleifend. Suspendisse potenti. Maecenas vel nunc tempor quam aliquet lobortis. Mauris velit nisi, congue sit amet enim id, aliquet bibendum arcu. Suspendisse nisl elit, posuere eget felis eu, accumsan eleifend arcu.
+                            In eu sem semper, elementum mi quis, cursus lectus. Donec non bibendum nisl. Ut eleifend nec enim sollicitudin suscipit. Praesent ac pharetra dolor. Mauris vitae dolor dui. Sed rutrum, felis congue tincidunt ullamcorper, dui velit pulvinar arcu, eget aliquam dui urna ut tellus. Duis arcu leo, gravida et hendrerit non, viverra sed ligula. Vestibulum dapibus sagittis molestie. Pellentesque dignissim ante a mauris laoreet tristique. Pellentesque ultrices lorem id sem molestie, et faucibus neque euismod."
+            android:textColor="#000"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
++	Rimosse stringhe hard-coded (caricamento dinamico da strings.xml)
+
++	Aggiunto cognome separato da "nome e cognome" in fase di registrazione
+
++	Rimossa checkbox "show password" in registrazione: ora si può visualizzare tramite un icona a destra
+	dell'edittext stessa (modulo https://github.com/lisawray/passwordview). Il componente è stato
+	aggiunto anche al login.    
+	TODO: in registration non funziona se il width non è match_parent;
+			mentre in login non funziona mai, non visualizza l'icona a destra
+			In realtà non è un vero problema, dato che è importante farlo funzionare nella registrazione,
+			è indispensabile vederla!)
+			nel login non è indispensabile (se sbaglia nella reg la password non potrà accedere più, quindi
+	Alternativa "manuale" al componente: http://vision-apps.blogspot.it/2014/08/enhanced-password-input-view.html
+
++	Creato account bikerent.comxa.com su 000webhost   (31.170.160.95)
+			churouho@turoid.com : v4n0rh0us3	(anche ftp!)
+			a1216361
+
++	Semplice script di login.php
+
++	Implementato login asincrono (con modulo AsyncHttpClient)
+
++	Implementato swype per far apparire cancella o altre azioni nella listview home
+		(https://github.com/baoyongzhang/SwipeMenuListView)
