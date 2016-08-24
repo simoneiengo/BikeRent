@@ -49,21 +49,25 @@ public class home extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //        .setAction("Action", null).show();
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+
+        assert drawer != null;
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
 
         //Fill list of item
@@ -73,9 +77,10 @@ public class home extends AppCompatActivity
 
         adapter = new MyAdapter(this, Row_data);
         listview = (SwipeMenuListView) findViewById(R.id.content).findViewById(R.id.listview);
+
         listview.setAdapter(adapter);
 
-        //SWYPE ACTION
+        // SWYPE ACTION
         SwipeMenuCreator creator = new SwipeMenuCreator() {
 
             @Override
@@ -103,11 +108,13 @@ public class home extends AppCompatActivity
             public boolean onMenuItemClick(int position, SwipeMenu menu, int index) {
                 switch (index) {
                     case 0:
+                        ///AGGIUNGERE Generazione stringa condivisione con sponsorizzazione sui social
                         // testItem
                         break;
                     case 1:
                         // delete
-                        //TODO:crasha se c'è un solo ultimo item
+                        //TODO:crasha se c'è un solo ultimo item (elimina sempre l'ultimo)
+                        ///AGGIUNGERE Operazione DB: Eliminare dal database
                         Row_data.remove(index);
                         listview.requestLayout();
                         break;
@@ -126,6 +133,7 @@ public class home extends AppCompatActivity
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        assert drawer != null;
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -166,6 +174,7 @@ public class home extends AppCompatActivity
 
         View mainContainer = findViewById(R.id.main_container);     // select container
         View oldContent = findViewById(R.id.content);               // select old content
+        assert ((ViewGroup) mainContainer) != null;
         ((ViewGroup) mainContainer).removeView(oldContent);         // remove old content
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(   // used to reset dim
                 ViewGroup.LayoutParams.MATCH_PARENT,
@@ -176,6 +185,9 @@ public class home extends AppCompatActivity
             ((ViewGroup) mainContainer).addView(newContent, params);            // add new content
         } else if (id == R.id.nav_gallery) {
             View newContent = inflater.inflate(R.layout.content_request, null); // select new content
+            ((ViewGroup) mainContainer).addView(newContent, params);            // add new content
+        } else if (id == R.id.nav_profile) {
+            View newContent = inflater.inflate(R.layout.content_home, null);    // select new content
             ((ViewGroup) mainContainer).addView(newContent, params);            // add new content
         } else if (id == R.id.nav_slideshow) {
             View newContent = inflater.inflate(R.layout.content_slide, null);   // select new content
@@ -198,6 +210,7 @@ public class home extends AppCompatActivity
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        assert drawer != null;
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

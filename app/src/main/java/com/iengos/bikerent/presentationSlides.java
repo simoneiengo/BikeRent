@@ -10,8 +10,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -94,7 +92,7 @@ public class presentationSlides extends AppCompatActivity {
     public void loginRedir(View v) { startActivity(new Intent(getApplicationContext(), login.class)); }
 
     /*============================================================
-                    DOT LINKS MANAGEMENT
+                     DOT LINKS MANAGEMENT
      ============================================================*/
     public void gotoX(View v) {
         // get position from description
@@ -102,7 +100,7 @@ public class presentationSlides extends AppCompatActivity {
     }
 
     /*============================================================
-                          POP-UP MANAGEMENT
+                      POP-UP MANAGEMENT
      ============================================================*/
     public void showPopup(View v) {
         if(((CheckBox)v).isChecked()) {
@@ -148,7 +146,7 @@ public class presentationSlides extends AppCompatActivity {
          * The fragment argument representing the section number for this
          * fragment.
          */
-        private static final String ARG_SECTION_NUMBER = "section_number";
+       private static final String ARG_SECTION_NUMBER = "section_number";
 
         /**
          * Returns a new instance of this fragment for the given section

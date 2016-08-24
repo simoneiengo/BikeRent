@@ -14,51 +14,55 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="bottom|center"
-        android:layout_marginBottom="10dp"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
 
-        <ImageView
-            android:id="@+id/ic_first"
-            android:contentDescription="0"
-            android:src="@drawable/ic_active_slide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:onClick="gotoX" />
+            <ImageView
+                android:id="@+id/ic_first"
+                android:contentDescription="0"
+                app:srcCompat="@drawable/ic_active_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="gotoX"
+                tools:ignore="MissingPrefix"/>
 
-        <ImageView
-            android:id="@+id/ic_second"
-            android:contentDescription="1"
-            android:src="@drawable/ic_passive_slide"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="gotoX" />
+            <ImageView
+                android:id="@+id/ic_second"
+                android:contentDescription="1"
+                app:srcCompat="@drawable/ic_passive_slide"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gotoX"
+                tools:ignore="MissingPrefix"/>
 
-        <ImageView
-            android:id="@+id/ic_third"
-            android:contentDescription="2"
-            android:src="@drawable/ic_passive_slide"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="gotoX" />
+            <ImageView
+                android:id="@+id/ic_third"
+                android:contentDescription="2"
+                app:srcCompat="@drawable/ic_passive_slide"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gotoX"
+                tools:ignore="MissingPrefix" />
 
-        <ImageView
-            android:id="@+id/ic_fourth"
-            android:contentDescription="3"
-            android:src="@drawable/ic_passive_slide"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="gotoX" />
+            <ImageView
+                android:id="@+id/ic_fourth"
+                android:contentDescription="3"
+                app:srcCompat="@drawable/ic_passive_slide"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gotoX"
+                tools:ignore="MissingPrefix"/>
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
