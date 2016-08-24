@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GitRepo_BikeRent.iml" filepath="$PROJECT_DIR$/GitRepo_BikeRent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BikeRentGit.iml" filepath="$PROJECT_DIR$/BikeRentGit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
