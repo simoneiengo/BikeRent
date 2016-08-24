@@ -19,12 +19,14 @@ public class init extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_init);
+
+        /// Set gif in webView
         WebView webView = (WebView) findViewById(R.id.gif_web_view);
         webView.loadUrl("file:///android_asset/logo.gif");
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(true);
 
-        // Wait 4s
+        // Wait 3s
         timeHandler = new Handler();
         timeHandler.postDelayed(new Runnable() {
             @Override
@@ -32,7 +34,6 @@ public class init extends AppCompatActivity {
                 Intent openLogin = new Intent(init.this, presentationSlides.class);
                 startActivity(openLogin);
             }
-        }, 4000);
-
+        }, 3000);
     }
 }
