@@ -26,9 +26,9 @@
     android:layout_gravity="top|center"
     android:layout_marginTop="10dp"
     android:src="@drawable/ic_account_circle_black"
-    app:civ_border_color="#4466AB"
+    app:civ_border_color="#EEE"
     app:civ_shadow="true"
     app:civ_shadow_radius="2"
-    app:civ_shadow_color="#0000FF"/>
+    app:civ_shadow_color="#AAA"/>
 
 </FrameLayout>

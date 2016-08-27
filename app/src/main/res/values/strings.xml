@@ -8,6 +8,13 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
+    <!-- DRAWER ACTIVITY -->
+    <string name="drawer_rent">Rent</string>
+    <string name="drawer_gallery">Gallery</string>
+    <string name="drawer_slideshow">Slideshow</string>
+    <string name="drawer_profile">Profile</string>
+    <string name="drawer_about">About</string>
+
     <!-- LOGIN ACTIVITY -->
     <string name="tv_login_username">Username</string>
     <string name="tv_login_password">Password</string>
@@ -24,4 +31,22 @@
     <string name="rb_reg_female">Donna</string>
     <string name="bt_reg_submit">Registrati</string>
     <string name="tv_reg_already">Sei già registrato?</string>
+
+    <!-- CONTENT_PROFILE ACTIVITY -->
+    <string name="label_account_surname">Cognome</string>
+    <string name="label_account_name">Nome</string>
+    <string name="label_cellulare">Cellulare</string>
+    <string name="label_gender">Genere</string>
+    <string name="label_email">Email</string>
+    <string name="account_name">dave</string>
+    <string name="account_surname">iengo</string>
+    <string name="account_cellulare">3929224903</string>
+    <string name="account_email">davide.iengo@hotmail.it</string>
+    <string name="account_save">Salva</string>
+    <string name="profile_label">PROFILE</string>
+    <string name="info_label">Information</string>
+    <string name="account_bike_num">Bike Num</string>
+    <string name="account_price">Price</string>
+    <string name="account_num_ord">N.1</string>
+    <string name="account_time">Tempo Richiesto</string>
 </resources>
