@@ -187,7 +187,7 @@ public class home extends AppCompatActivity
             View newContent = inflater.inflate(R.layout.content_request, null); // select new content
             ((ViewGroup) mainContainer).addView(newContent, params);            // add new content
         } else if (id == R.id.nav_profile) {
-            View newContent = inflater.inflate(R.layout.content_home, null);    // select new content
+            View newContent = inflater.inflate(R.layout.content_profile, null);    // select new content
             ((ViewGroup) mainContainer).addView(newContent, params);            // add new content
         } else if (id == R.id.nav_slideshow) {
             View newContent = inflater.inflate(R.layout.content_slide, null);   // select new content
