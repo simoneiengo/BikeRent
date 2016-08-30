@@ -193,10 +193,8 @@ public class home extends AppCompatActivity
             View newContent = inflater.inflate(R.layout.content_slide, null);   // select new content
             ((ViewGroup) mainContainer).addView(newContent, params);            // add new content
         } else if (id == R.id.nav_about) {
-            dialog = new Dialog(home.this);
-            dialog.setContentView(R.layout.rules_popup);        // set popup layout
-            dialog.setTitle("About");
-            dialog.show();                                      // open popup
+            View newContent = inflater.inflate(R.layout.content_about, null);   // select new content
+            ((ViewGroup) mainContainer).addView(newContent, params);            // add new content
         } else if (id == R.id.nav_share) {
             dialog = new Dialog(home.this);
             dialog.setContentView(R.layout.rules_popup);        // set popup layout

@@ -32,6 +32,12 @@
     <string name="bt_reg_submit">Registrati</string>
     <string name="tv_reg_already">Sei già registrato?</string>
 
+    <!-- ABOUT ACTIVITY -->
+    <string name="lbl_about">License</string>
+    <string name="copyright">All rights reserved - © copyright 2016</string>
+    <string name="Note">This program is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation.
+This program is distributed in the hope that it will be useful.</string>
+
     <!-- CONTENT_PROFILE ACTIVITY -->
     <string name="label_account_surname">Cognome</string>
     <string name="label_account_name">Nome</string>
