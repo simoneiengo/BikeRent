@@ -25,7 +25,7 @@ import cz.msebera.android.httpclient.Header;
  */
 public class login  extends AppCompatActivity{
 
-    public static final String URL = "http://localhost/BikeRentWeb/login.php";
+    public static final String URL = "http://10.113.53.241/BikeRentWeb/login.php";
     Dialog dialog;
     EditText et_email;
     PasswordView et_pass;
