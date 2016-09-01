@@ -67,6 +67,8 @@ public class MyAdapter extends BaseAdapter {
 
         if(CurrentRow.Status.equals("Terminato"))
             Status.setTextColor(Color.parseColor("#9D1309"));
+        else
+            Status.setTextColor(Color.parseColor("#666666"));
 
         Status.setText(CurrentRow.Status);
         return vi;

@@ -32,6 +32,10 @@
     <string name="bt_reg_submit">Registrati</string>
     <string name="tv_reg_already">Sei già registrato?</string>
 
+    <!-- LOGIN ACTIVITY -->
+    <string name="tv_login_pass_forgotten">Hai dimendicato la password?</string>
+    <string name="tv_popup_pass">Inserisci l email di iscrizione, riceverai un messaggio contenente la password</string>
+
     <!-- ABOUT ACTIVITY -->
     <string name="lbl_about">License</string>
     <string name="copyright">All rights reserved - © copyright 2016</string>
@@ -55,4 +59,6 @@ This program is distributed in the hope that it will be useful.</string>
     <string name="account_price">Price</string>
     <string name="account_num_ord">N.1</string>
     <string name="account_time">Tempo Richiesto</string>
+    <string name="btnCancPopup">Annulla</string>
+    <string name="btnOkPopup">OK</string>
 </resources>

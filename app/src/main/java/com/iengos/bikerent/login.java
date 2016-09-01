@@ -1,5 +1,6 @@
 package com.iengos.bikerent;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ import cz.msebera.android.httpclient.Header;
 public class login  extends AppCompatActivity{
 
     public static final String URL = "http://bikerent.comxa.com/login.php";
-
+    Dialog dialog;
     EditText et_user;
     PasswordView et_pass;
 
@@ -33,6 +34,7 @@ public class login  extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        dialog = new Dialog(login.this);
     }
 
     // called when login button is clicked
@@ -76,10 +78,27 @@ public class login  extends AppCompatActivity{
         });
     }
 
+    /*============================================================
+                  POP-UP MANAGEMENT PASSWORD
+    ============================================================*/
+    public void getPass(View v) {
+            dialog.setContentView(R.layout.get_pass_popup);        // set popup layout
+            dialog.setTitle("Get Password");
+            dialog.show();                                      // open popup
+    }
+
     @Override
     public void onBackPressed(){
         Intent i = new Intent(getApplicationContext(), presentationSlides.class);
         i.putExtra("slideNum", 3);
         startActivity(i);
+    }
+
+    public void sendEmailPass(View v){
+        //TODO: implementare la richiesta di password tramite email
+    }
+
+    public void cancelEmailPass(View v){
+       dialog.dismiss();
     }
 }

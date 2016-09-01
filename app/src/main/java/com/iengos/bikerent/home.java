@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 import android.view.ViewManager;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.baoyz.swipemenulistview.SwipeMenu;
 import com.baoyz.swipemenulistview.SwipeMenuCreator;
@@ -113,11 +114,10 @@ public class home extends AppCompatActivity
                         break;
                     case 1:
                         // delete
-                        //TODO:crasha se c'è un solo ultimo item (elimina sempre l'ultimo)
                         ///AGGIUNGERE Operazione DB: Eliminare dal database
-                        Row_data.remove(index);
-                        listview.requestLayout();
-                        break;
+                            Row_data.remove(position);
+                            adapter.notifyDataSetChanged();
+                            break;
                 }
                 // false : close the menu; true : not close the menu
                 return false;
