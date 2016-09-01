@@ -61,4 +61,5 @@ This program is distributed in the hope that it will be useful.</string>
     <string name="account_time">Tempo Richiesto</string>
     <string name="btnCancPopup">Annulla</string>
     <string name="btnOkPopup">OK</string>
+    <string name="pd_query_failed">Errore query:</string>
 </resources>

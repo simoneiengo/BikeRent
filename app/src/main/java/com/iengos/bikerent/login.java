@@ -25,9 +25,9 @@ import cz.msebera.android.httpclient.Header;
  */
 public class login  extends AppCompatActivity{
 
-    public static final String URL = "http://bikerent.comxa.com/login.php";
+    public static final String URL = "http://localhost/BikeRentWeb/login.php";
     Dialog dialog;
-    EditText et_user;
+    EditText et_email;
     PasswordView et_pass;
 
     @Override
@@ -39,12 +39,12 @@ public class login  extends AppCompatActivity{
 
     // called when login button is clicked
     public void login(View v) {
-        et_user = (EditText) findViewById(R.id.et_username);
+        et_email = (EditText) findViewById(R.id.et_username);
         et_pass = (PasswordView) findViewById(R.id.et_password);
 
         String p = et_pass.getText().toString();
         RequestParams params = new RequestParams();
-        params.put("username", et_user.getText().toString());
+        params.put("email", et_email.getText().toString());
         params.put("password", et_pass.getText().toString());
 
         AsyncHttpClient client = new AsyncHttpClient();
@@ -63,11 +63,14 @@ public class login  extends AppCompatActivity{
             @Override
             public void onSuccess(int statusCode, Header[] headers, String responseBody) {
                 prgDialog.cancel();
-                Log.i("login_response", responseBody);
+                //Log.i("login_response", responseBody);
                 if(responseBody.equals("login_ok")) //TODO: settare variabili dell'account da passare all'activity home
                     startActivity(new Intent(getApplicationContext(), home.class));
-                else
+                else if(responseBody.equals("login_ok")) //login errato
                     Toast.makeText(login.this, getResources().getString(R.string.pd_login_failed), Toast.LENGTH_SHORT).show();
+                else    //mysql_query failed, output: error message
+                    Toast.makeText(login.this, getResources().getString(R.string.pd_query_failed) + responseBody, Toast.LENGTH_LONG).show();
+
             }
 
             @Override
