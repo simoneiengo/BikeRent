@@ -51,4 +51,12 @@
         android:layout_gravity="center"
         android:text="Login"
         android:onClick="login" />
+
+    <TextView
+        android:id="@+id/ForgottenPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/tv_login_pass_forgotten"
+        android:onClick="getPass"/>
 </LinearLayout>

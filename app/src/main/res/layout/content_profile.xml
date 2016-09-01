@@ -57,7 +57,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="40dp"
             android:gravity="left"
             android:textSize="10dp"
             android:text="@string/label_account_surname"
@@ -81,7 +80,7 @@
             android:layout_rowSpan="4"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
@@ -93,22 +92,23 @@
             android:inputType="textCapSentences"
             android:background="@null"
             android:layout_columnSpan="2"
-            android:layout_rowSpan="1"/>
+            android:layout_rowSpan="1"
+            android:maxLines="1"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/accountSurname"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
             android:gravity="left"
             android:text="@string/account_surname"
             android:textColor="#222"
             android:textSize="16dp"
-            android:id="@+id/accountSurname"
             android:inputType="textCapSentences"
             android:background="@null"
             android:layout_columnSpan="2"
-            android:layout_rowSpan="1"/>
+            android:layout_rowSpan="1"
+            android:maxLines="1"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -124,7 +124,8 @@
             android:layout_rowSpan="1"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/AccountCellulare"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="20dp"
@@ -132,10 +133,11 @@
             android:textColor="#222"
             android:textSize="16dp"
             android:text="@string/account_cellulare"
-            android:id="@+id/AccountCellulare"
+            android:inputType="textCapSentences"
             android:background="@null"
             android:layout_columnSpan="2"
-            android:layout_rowSpan="1"/>
+            android:layout_rowSpan="1"
+            android:maxLines="1"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -151,7 +153,8 @@
             android:layout_rowSpan="1"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/AccountEmail"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="20dp"
@@ -159,10 +162,11 @@
             android:textColor="#222"
             android:textSize="16dp"
             android:text="@string/account_email"
-            android:id="@+id/AccountEmail"
             android:background="@null"
+            android:inputType="textCapSentences"
             android:layout_columnSpan="9"
-            android:layout_rowSpan="1"/>
+            android:layout_rowSpan="1"
+            android:maxLines="1"/>
 
         <TextView
             android:layout_width="wrap_content"
