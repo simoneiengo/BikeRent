@@ -19,6 +19,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//TODO: check if server returns 'mail_err' in registration (mail is already present in db)
+
 public class presentationSlides extends AppCompatActivity {
 
     private static LayoutInflater mInflater;        // used to point to original layout

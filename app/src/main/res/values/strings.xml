@@ -34,7 +34,7 @@
 
     <!-- LOGIN ACTIVITY -->
     <string name="tv_login_pass_forgotten">Hai dimendicato la password?</string>
-    <string name="tv_popup_pass">Inserisci l email di iscrizione, riceverai un messaggio contenente la password</string>
+    <string name="tv_popup_pass">Inserisci l e-mail di iscrizione, riceverai una nuova password cliccando il link presente nell mail.</string>
 
     <!-- ABOUT ACTIVITY -->
     <string name="lbl_about">License</string>
@@ -62,4 +62,8 @@ This program is distributed in the hope that it will be useful.</string>
     <string name="btnCancPopup">Annulla</string>
     <string name="btnOkPopup">OK</string>
     <string name="pd_query_failed">Errore query:</string>
+    <string name="pd_fill_field">Riempire i campi correttamente.</string>
+    <string name="reset_mail_inp">ERROR: your email is not present!</string>
+    <string name="reset_working">Wait, we\'are sending the reset link to your email</string>
+    <string name="reset_mail_ok">Email sent. Please check the reset link</string>
 </resources>

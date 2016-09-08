@@ -19,6 +19,7 @@
         android:textColor="#000"/>
 
     <EditText
+        android:id="@+id/etPopupEmail"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="#FFF"
